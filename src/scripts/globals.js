@@ -1,4 +1,4 @@
-import mainLogo from "../assets/images/logo-upscaled.png";
+import mainLogo from "../assets/images/logo.webp";
 
 // Copyright year
 const copyrightYear = document.getElementById("copyright-year");
@@ -19,7 +19,7 @@ telephoneElWrapper.addEventListener("click", () => {
   navigator.clipboard
     .writeText("3585093051")
     .then(() => {
-      telephoneEl.style.maskImage = "url('/clipboard-success-icon.svg')";
+      telephoneEl.style.maskImage = "url('/ep-sonido-iluminacion/clipboard-success-icon.svg')";
       telephoneElTooltip.textContent = "Texto copiado correctamente!";
 
       copyTelTimeout = setTimeout(() => {
@@ -28,7 +28,7 @@ telephoneElWrapper.addEventListener("click", () => {
         }
 
         telephoneElWrapper.blur();
-        telephoneEl.style.maskImage = "url('/copy-suggest-icon.svg')";
+        telephoneEl.style.maskImage = "url('/ep-sonido-iluminacion/copy-suggest-icon.svg')";
 
         copyTelTimeoutText = setTimeout(() => {
           if (copyTelTimeoutText) {
@@ -40,7 +40,7 @@ telephoneElWrapper.addEventListener("click", () => {
     })
     .catch((err) => {
       console.error("Failed to copy telephone number: ", err);
-      telephoneEl.style.maskImage = "url('/clipboard-exclamation-icon.svg')";
+      telephoneEl.style.maskImage = "url('/ep-sonido-iluminacion/clipboard-exclamation-icon.svg')";
       telephoneElTooltip.textContent = "Error al copiar el texto.";
     });
 });
@@ -50,16 +50,16 @@ emailElWrapper.addEventListener("click", () => {
   navigator.clipboard
     .writeText("epsonido.macias@gmail.com")
     .then(() => {
-      emailEl.style.maskImage = "url('/clipboard-success-icon.svg')";
+      emailEl.style.maskImage = "url('/ep-sonido-iluminacion/clipboard-success-icon.svg')";
       emailElTooltip.textContent = "Texto copiado correctamente!";
 
-      copyTelTimeout = setTimeout(() => {
-        if (copyTelTimeout) {
-          clearTimeout(copyTelTimeout);
+      copyMailTimeout = setTimeout(() => {
+        if (copyMailTimeout) {
+          clearTimeout(copyMailTimeout);
         }
 
         emailElWrapper.blur();
-        emailEl.style.maskImage = "url('/copy-suggest-icon.svg')";
+        emailEl.style.maskImage = "url('/ep-sonido-iluminacion/copy-suggest-icon.svg')";
 
         copyMailTimeoutText = setTimeout(() => {
           if (copyMailTimeoutText) {
@@ -71,7 +71,7 @@ emailElWrapper.addEventListener("click", () => {
     })
     .catch((err) => {
       console.error("Failed to copy telephone number: ", err);
-      emailEl.style.maskImage = "url('/clipboard-exclamation-icon.svg')";
+      emailEl.style.maskImage = "url('/ep-sonido-iluminacion/clipboard-exclamation-icon.svg')";
       emailElTooltip.textContent = "Error al copiar el texto.";
     });
 });

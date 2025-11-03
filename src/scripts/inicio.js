@@ -2,7 +2,7 @@ import "../styles/styles.css";
 import "./globals.js";
 import "../styles/inicio.css";
 import texture_1 from "../assets/images/texture_1.webp";
-import texture_2 from "../assets/images/texture_2.png";
+import texture_2 from "../assets/images/texture_2.webp";
 import harp_08 from "../audio/harp_08.mp3";
 import harp_13 from "../audio/harp_13.mp3";
 

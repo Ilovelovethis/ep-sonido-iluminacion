@@ -753,7 +753,7 @@ label {
   text-align: center;
 
   & p {
-    font-size: var(--fz-m);
+    font-size: var(--fz-ml);
     max-width: 55ch;
     animation: h2-para-in both var(--trs-l) 350ms;
   }
@@ -785,6 +785,16 @@ label {
   animation: underline-in both var(--trs-in-long) 300ms;
 }
 
+#gallery-h2,
+#gallery-underline,
+#gallery-paragraph {
+  animation-delay: -1ms;
+  animation-duration: 1ms;
+  animation-iteration-count: 1;
+  transition-delay: 0s;
+  transition-duration: 0s;
+}
+
 .fv-button:focus-visible {
   outline: var(--border-width-s) solid var(--accent-500);
   outline-offset: 5px;
@@ -792,7 +802,7 @@ label {
 
 .about-cta {
   max-width: 55ch;
-  margin: 0 auto var(--spacing-xl) auto;
+  margin: 0 auto var(--spacing-xl);
   padding: var(--spacing-xl);
   text-align: center;
   opacity: 0.3;
@@ -925,13 +935,21 @@ label {
 }
 
 @media screen and (max-width: 500px) {
+  .about-cta {
+    margin: 0 auto var(--spacing-xxl);
+  }
+
   .about-cta-button {
     padding: var(--spacing-s) var(--spacing-ml);
     font-size: var(--fz-s);
   }
 
+  .about-cta-button.services {
+    padding: var(--spacing-s) var(--spacing-ms);
+  }
+
   .theme-fieldset {
-    opacity: 0.9;
+    opacity: 0.9 !important;
     width: min-content;
   }
 }

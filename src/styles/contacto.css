@@ -10,10 +10,11 @@
 }
 
 .contact-form-wrapper {
-  width: fit-content; /*Check later!*/
+  width: fit-content;
 }
 
 .contact-form {
+  max-width: 90vw;
   padding: var(--spacing-ml) var(--spacing-ml);
   border: var(--border-width-m) solid var(--secondary-300);
   border-radius: var(--radius-l);
@@ -30,8 +31,8 @@
   }
 
   & :is(input, textarea, select) {
+    width: min(100%, 90vw);
     margin-block-end: var(--spacing-ml);
-    width: 100%;
     font-size: var(--fz-m);
     border: var(--border-width-m) solid var(--secondary-500);
     border-radius: var(--radius-m);
@@ -329,7 +330,7 @@
   background: var(--c), var(--c), var(--secondary-200);
   background-size: 60% 100%;
   transition: opacity 170ms;
-  animation: button-blup 3.3s infinite;
+  animation: loader-fill 3.3s infinite;
 }
 
 .loader.shown {
@@ -433,7 +434,14 @@
   }
 }
 
-@keyframes button-blup {
+@media screen and (max-width: 500px) {
+  .dev-contact {
+    width: fit-content;
+    margin: 0 1cap var(--spacing-xxl) auto;
+  }
+}
+
+@keyframes loader-fill {
   0% {
     background-position:
       -150% 0,

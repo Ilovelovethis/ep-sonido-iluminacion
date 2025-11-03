@@ -320,8 +320,14 @@
   }
 
   .service-card-description {
-    font-size: var(--fz-s);
+    font-size: var(--fz-ms);
     line-height: 1.5;
+  }
+
+  .service-card-list {
+    & li {
+      font-size: var(--fz-s);
+    }
   }
 }
 

@@ -27,6 +27,7 @@
 
   & ul li {
     display: flex;
+    margin-block: var(--spacing-m);
   }
 
   & ul li a {
@@ -79,7 +80,8 @@
 .copy-icon {
   height: 1.375em;
   width: 1.375em;
-  mask: url("/copy-suggest-icon.svg") center / contain no-repeat;
+  mask: url("/ep-sonido-iluminacion/copy-suggest-icon.svg") center / contain
+    no-repeat;
   background-color: var(--accent-600-shared);
 }
 
