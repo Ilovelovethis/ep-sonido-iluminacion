@@ -23,6 +23,7 @@
   --spacing-xl: 3.75rem;
   --spacing-xxl: 8rem;
   --fz-base: 1.1875rem;
+  --fz-s: 0.875rem;
   --fz-s: 1.0625rem;
   --fz-ms: 1.25rem;
   --fz-m: 1.375rem;
@@ -749,10 +750,10 @@ label {
   flex-direction: column;
   align-items: center;
   padding-inline: var(--spacing-m);
+  text-align: center;
 
   & p {
     font-size: var(--fz-m);
-    text-align: center;
     max-width: 55ch;
     animation: h2-para-in both var(--trs-l) 350ms;
   }
@@ -762,7 +763,6 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: max-content;
   margin: 0 auto;
 }
 
@@ -790,10 +790,149 @@ label {
   outline-offset: 5px;
 }
 
+.about-cta {
+  max-width: 55ch;
+  margin: 0 auto var(--spacing-xl) auto;
+  padding: var(--spacing-xl);
+  text-align: center;
+  opacity: 0.3;
+  transition: opacity var(--trs-m);
+}
+
+.about-cta.intersected {
+  opacity: 1;
+}
+
+.about-cta-title {
+  font-size: var(--fz-xl);
+  color: var(--primary-900);
+  margin-block-end: var(--spacing-m);
+  font-weight: 650;
+  font-variation-settings: "wght" 650;
+}
+
+.about-cta-description {
+  font-size: var(--fz-ml);
+  margin-block-end: var(--spacing-l);
+  perspective: 150px;
+}
+
+.about-cta-button-wrapper,
+.services-cta-button-wrapper {
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+
+  --text-900: hsl(49, 33%, 90%);
+  --accent-100: hsl(286, 33%, 10%);
+  --accent-200: hsl(289, 31%, 20%);
+  --accent-300: hsl(288, 32%, 30%);
+  --accent-400: hsl(288, 32%, 35%);
+  --accent-500: hsl(288, 37%, 48%);
+  --secondary-400: hsl(225, 33%, 40%);
+  --secondary-600: hsl(225, 33%, 57%);
+  --secondary-700: hsl(225, 33%, 65%);
+}
+
+.about-cta-button {
+  will-change: scale;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-s);
+  padding: var(--spacing-m) var(--spacing-l);
+  font-family: var(--ff-extra-bold);
+  font-size: var(--fz-ml);
+  color: var(--text-900);
+  border: var(--border-width-m) solid var(--accent-400);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-2);
+  transition:
+    background-position var(--trs-s),
+    scale var(--trs-s),
+    border-color var(--trs-m),
+    box-shadow var(--trs-s),
+    translate var(--trs-s);
+  background-image: linear-gradient(
+    139deg,
+    var(--accent-100),
+    var(--accent-200),
+    var(--accent-100)
+  );
+  background-size: 263%;
+  background-position: 0%;
+
+  .about-cta-button-wrapper:hover & {
+    translate: 0 -2.3px;
+    box-shadow: var(--shadow-3);
+    background-position: 100%;
+    border-color: var(--accent-500);
+    transition:
+      background-position var(--trs-l),
+      scale var(--trs-s),
+      border-color var(--trs-m),
+      box-shadow var(--trs-s),
+      translate var(--trs-s);
+
+    & .about-cta-button-arrow {
+      translate: 5px 0.0625em;
+    }
+  }
+
+  .about-cta-button-wrapper:active & {
+    translate: 0;
+    box-shadow: var(--shadow-1);
+  }
+}
+
+.about-cta-button-arrow {
+  position: relative;
+  font-size: var(--fz-ml);
+  translate: 0 0.0625em;
+  transition: translate var(--trs-s);
+}
+
+@media screen and (max-width: 900px) {
+  .about-cta-button {
+    padding: var(--spacing-ms) var(--spacing-ml);
+    font-size: var(--fz-m);
+  }
+}
+
 @media screen and (max-width: 700px) {
   .main-whatsapp-icon {
     height: 44px;
     width: 44px;
+  }
+
+  .about-cta-title {
+    font-size: var(--fz-l);
+  }
+
+  .about-cta-description {
+    font-size: var(--fz-m);
+  }
+
+  .about-cta-button {
+    padding: var(--spacing-s) var(--spacing-m);
+    font-size: var(--fz-ms);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-underline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-cta-button {
+    padding: var(--spacing-s) var(--spacing-ml);
+    font-size: var(--fz-s);
+  }
+
+  .theme-fieldset {
+    opacity: 0.9;
+    width: min-content;
   }
 }
 
@@ -802,11 +941,20 @@ label {
     height: 36px;
     width: 36px;
   }
+
+  .about-cta-title {
+    font-size: var(--fz-ml);
+  }
+
+  .about-cta-description {
+    font-size: var(--fz-s);
+  }
 }
 
-@media screen and (max-width: 400px) {
-  .main-whatsapp-anchor {
-    margin: 0 30px 3em 0;
+@media screen and (max-width: 350px) {
+  .about-cta-button {
+    padding: var(--spacing-s) var(--spacing-m);
+    font-size: var(--fz-xs);
   }
 }
 

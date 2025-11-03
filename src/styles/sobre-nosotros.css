@@ -1,7 +1,7 @@
 .about-hero {
   position: relative;
   margin: 0 auto var(--spacing-xl) auto;
-  padding: var(--spacing-xl) var(--spacing-m);
+  padding: var(--spacing-xl) var(--spacing-ml);
   text-align: center;
 
   &::before {
@@ -247,4 +247,10 @@
   font-size: var(--fz-ml);
   translate: 0 0.0625em;
   transition: translate var(--trs-s);
+}
+
+@media screen and (max-width: 500px) {
+  .about-hero {
+    margin: 0 auto var(--spacing-ml) auto;
+  }
 }

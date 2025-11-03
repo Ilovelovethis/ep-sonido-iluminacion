@@ -235,7 +235,7 @@ if (fullPath.match("/galerias")) {
 // Change document title based on slug
 const originalTitle = document.title;
 
-if (fullPath !== "/") {
+if (fullPath !== "/" || "/ep-sonido-iluminacion/") {
   const lowerCaseSlug = fullPath.substring(fullPath.lastIndexOf("/") + 1);
   const capitalizedSlug = lowerCaseSlug.replace(/\b\w/g, (char) =>
     char.toUpperCase(),

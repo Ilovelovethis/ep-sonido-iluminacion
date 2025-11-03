@@ -84,7 +84,7 @@ h6 {
 
 :where(input, select, textarea) {
   display: block;
-  min-width: 28ch;
+  min-width: 23ch;
   max-width: 100%;
 }
 

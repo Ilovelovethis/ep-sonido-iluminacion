@@ -183,7 +183,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 39px;
+  flex-wrap: wrap;
+  gap: var(--spacing-l);
   margin-block-start: var(--spacing-ml);
 }
 
@@ -328,7 +329,7 @@
   background: var(--c), var(--c), var(--secondary-200);
   background-size: 60% 100%;
   transition: opacity 170ms;
-  animation: l16 3.3s infinite;
+  animation: button-blup 3.3s infinite;
 }
 
 .loader.shown {
@@ -395,7 +396,44 @@
   }
 }
 
-@keyframes l16 {
+@media screen and (max-width: 1000px) {
+  .form-buttons-wrapper {
+    justify-content: center;
+  }
+
+  .contact-main {
+    grid-template-columns: 1fr;
+    margin: var(--spacing-l) 0;
+    padding: var(--spacing-m);
+  }
+
+  .contact-aside {
+    position: static;
+    inset: unset;
+  }
+}
+
+.dev-contact {
+  width: fit-content;
+  margin: 0 1cap var(--spacing-ml) auto;
+  padding-inline: var(--spacing-m);
+  font-size: var(--fz-m);
+  text-align: right;
+  opacity: 0.88;
+
+  & a {
+    font-family: var(--ff-extra);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-301-shared);
+    transition: text-decoration-color var(--trs-s);
+
+    &:hover {
+      text-decoration-color: var(--accent-500);
+    }
+  }
+}
+
+@keyframes button-blup {
   0% {
     background-position:
       -150% 0,
@@ -410,37 +448,5 @@
     background-position:
       250% 0,
       250% 0;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .contact-main {
-    grid-template-columns: 1fr;
-    margin: var(--spacing-l);
-    padding: var(--spacing-ml);
-  }
-
-  .contact-aside {
-    position: static;
-    inset: unset;
-  }
-}
-
-.dev-contact {
-  width: fit-content;
-  margin: 0 1cap var(--spacing-ml) auto;
-  padding-inline: var(--spacing-m);
-  font-size: var(--fz-m);
-  opacity: 0.88;
-
-  & a {
-    font-family: var(--ff-extra);
-    text-decoration: underline;
-    text-decoration-color: var(--accent-301-shared);
-    transition: text-decoration-color var(--trs-s);
-
-    &:hover {
-      text-decoration-color: var(--accent-500);
-    }
   }
 }
