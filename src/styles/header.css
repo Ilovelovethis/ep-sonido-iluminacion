@@ -36,7 +36,8 @@
 .main-header-inner-wrapper {
   display: grid;
   grid-template-columns: 450px 1fr 450px;
-  place-items: center;
+  justify-items: center;
+  align-items: start;
   padding: 0.5em 1.25em 0.375em;
 }
 
