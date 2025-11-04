@@ -53,7 +53,7 @@
   letter-spacing: -0.015em;
   color: hsl(51, 91%, 51%);
   margin-block-end: var(--spacing-xl);
-  animation: hero-fade-in-sec var(--trs-out-long) 390ms both;
+  animation: hero-fade-in-sec var(--trs-out-long) 230ms both;
 }
 
 .hero-cta-buttons {
@@ -546,7 +546,7 @@
 
 @keyframes hero-fade-in-sec {
   from {
-    opacity: 0.12;
+    opacity: 0;
     scale: 0.5;
     transform: rotateX(33deg) rotateY(19deg);
   }

@@ -237,19 +237,30 @@
           >
             <fieldset class="contact-important-fieldset">
               <label for="name">Nombre:</label>
-              <input type="text" id="name" name="Nombre" required />
+              <input
+                type="text"
+                id="name"
+                name="Nombre"
+                maxlength="50"
+                required
+              />
 
               <label for="email">Dirección de correo electrónico:</label>
-              <input type="email" id="email" name="email" />
+              <input type="email" id="email" name="email" maxlength="120" />
               <p class="and-or-para">y / o</p>
               <label for="phone">Número de teléfono:</label>
-              <input type="tel" id="phone" name="Teléfono" />
+              <input type="tel" id="phone" name="Teléfono" maxlength="50" />
 
               <label for="subject">Asunto:</label>
-              <input type="text" id="subject" name="Motivo" />
+              <input type="text" id="subject" name="Motivo" maxlength="300" />
 
               <label for="message">Mensaje:</label>
-              <textarea id="message" name="Mensaje" required></textarea>
+              <textarea
+                id="message"
+                name="Mensaje"
+                maxlength="1200"
+                required
+              ></textarea>
             </fieldset>
 
             <fieldset class="contact-extra-fieldset">
@@ -321,7 +332,12 @@
               </div>
 
               <label for="location">Lugar del evento:</label>
-              <input type="text" name="Locación" id="location" />
+              <input
+                type="text"
+                name="Lugar del Evento"
+                id="location"
+                maxlength="300"
+              />
             </fieldset>
 
             <div class="form-buttons-wrapper">

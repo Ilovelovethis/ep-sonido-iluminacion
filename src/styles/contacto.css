@@ -435,6 +435,16 @@
 }
 
 @media screen and (max-width: 500px) {
+  .contact-important-fieldset,
+  .contact-extra-fieldset {
+    & label {
+      font-size: var(--fz-ms);
+    }
+    & :is(input, textarea, select) {
+      font-size: var(--fz-ms);
+    }
+  }
+
   .dev-contact {
     width: fit-content;
     margin: 0 1cap var(--spacing-xxl) auto;

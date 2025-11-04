@@ -756,6 +756,10 @@ label {
     font-size: var(--fz-ml);
     max-width: 55ch;
     animation: h2-para-in both var(--trs-l) 350ms;
+
+    &:first-of-type {
+      margin-block-start: 1.1875em;
+    }
   }
 }
 

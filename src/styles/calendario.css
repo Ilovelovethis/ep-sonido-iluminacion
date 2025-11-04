@@ -15,7 +15,9 @@
   border-radius: var(--radius-m);
   box-shadow: var(--shadow-3);
   overflow: auto;
-  animation: calendar-in forwards var(--trs-m) 250ms;
+  opacity: 0;
+  translate: 0 18px;
+  animation: calendar-in forwards var(--trs-m) 1350ms;
 }
 
 /*.calendar-embed-wrapper.loading::after {
