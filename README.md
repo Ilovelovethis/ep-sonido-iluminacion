@@ -1,6 +1,6 @@
 # EP Sonido Iluminación
 
-![Company logo](/public/logo.png)
+![Company logo](/public/big-logo.png)
 
 ---
 

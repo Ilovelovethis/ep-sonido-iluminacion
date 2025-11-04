@@ -1,6 +1,6 @@
 #services-under-hero-para {
-  font-size: var(--fz-ms);
-  color: var(--primary-800);
+  font-size: var(--fz-ml);
+  color: var(--primary-900);
   animation: h2-para-in both var(--trs-l) 575ms;
 }
 
@@ -218,10 +218,9 @@
     font-family: var(--ff-base);
     font-size: var(--fz-ms);
     color: var(--primary-800);
-    padding-inline-start: var(--spacing-ml);
+    padding-inline-start: calc(0.375ch + var(--spacing-ml));
     position: relative;
     min-height: 1.5lh;
-    transition: font-size var(--trs-in-long);
 
     &::before {
       content: "✔";
@@ -327,6 +326,10 @@
   .service-card-list {
     & li {
       font-size: var(--fz-s);
+
+      &::before {
+        font-size: var(--fz-ml);
+      }
     }
   }
 }

@@ -194,7 +194,7 @@
 }
 
 #main-header.scrolled .main-logo.top {
-  translate: 0 calc(-100% -0.5em);
+  translate: 0 calc(-100% - 0.5em);
   scale: 0.9;
   height: 0;
   opacity: 0;

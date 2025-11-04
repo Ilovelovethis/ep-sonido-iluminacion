@@ -1,8 +1,6 @@
 import "../styles/styles.css";
 import "./globals.js";
 import "../styles/inicio.css";
-import texture_1 from "../assets/images/texture_1.webp";
-import texture_2 from "../assets/images/texture_2.webp";
 import harp_08 from "../audio/harp_08.mp3";
 import harp_13 from "../audio/harp_13.mp3";
 
@@ -90,19 +88,6 @@ aboutUsColumns.forEach((column) => {
     animationFrameId = null;
   });
 });
-
-// Load textures
-const heroEl = document.querySelector(".hero-section");
-
-heroEl.style.background = `radial-gradient( ellipse at 50% 50%, hsla(224, 33%, 40%, 0.69) 0%, hsla(224, 33%, 30%, 0.75) 35%, hsla(224, 33%, 10%, 0.8) 70%, hsl(222, 33%, 10%) 100%), url(${texture_1})`;
-
-const columnStyle = document.createElement("style");
-columnStyle.textContent = `
-  .about-us-column::after {
-    mask: url("${texture_2}") center / 64px 64px repeat;
-  }
-    `;
-document.head.append(columnStyle);
 
 // Custom implementation of Underline.js on .about-us-title
 class GuitarString {
@@ -294,7 +279,7 @@ class SingleUnderline {
 // Initialize underline
 const aboutUsTitle = document.querySelector(".about-us-title");
 if (aboutUsTitle) {
-  // Add audio elements for cello sounds
+  // Add audio elements for harp sounds
   const audioContainer = document.createElement("div");
   audioContainer.style.display = "none";
   audioContainer.innerHTML = `
@@ -303,6 +288,5 @@ if (aboutUsTitle) {
   `;
   document.body.appendChild(audioContainer);
 
-  // Initialize the underline
   new SingleUnderline(aboutUsTitle);
 }

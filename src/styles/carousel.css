@@ -78,3 +78,20 @@
   outline: var(--border-width-s) solid var(--accent-500) !important;
   outline-offset: 2px !important;
 }
+
+@media screen and (max-width: 900px) {
+  .carousel-wrapper {
+    margin: var(--spacing-l) var(--spacing-m) var(--spacing-xl);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-wrapper {
+    margin: var(--spacing-l) var(--spacing-m)
+      calc(var(--spacing-l) + var(--spacing-xxl));
+  }
+
+  .splide__arrow {
+    opacity: 0.36 !important;
+  }
+}

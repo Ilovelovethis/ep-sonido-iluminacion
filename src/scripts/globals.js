@@ -1,5 +1,3 @@
-import mainLogo from "../assets/images/logo.webp";
-
 // Copyright year
 const copyrightYear = document.getElementById("copyright-year");
 
@@ -19,7 +17,8 @@ telephoneElWrapper.addEventListener("click", () => {
   navigator.clipboard
     .writeText("3585093051")
     .then(() => {
-      telephoneEl.style.maskImage = "url('/ep-sonido-iluminacion/clipboard-success-icon.svg')";
+      telephoneEl.style.maskImage =
+        "url('/ep-sonido-iluminacion/clipboard-success-icon.svg')";
       telephoneElTooltip.textContent = "Texto copiado correctamente!";
 
       copyTelTimeout = setTimeout(() => {
@@ -28,7 +27,8 @@ telephoneElWrapper.addEventListener("click", () => {
         }
 
         telephoneElWrapper.blur();
-        telephoneEl.style.maskImage = "url('/ep-sonido-iluminacion/copy-suggest-icon.svg')";
+        telephoneEl.style.maskImage =
+          "url('/ep-sonido-iluminacion/copy-suggest-icon.svg')";
 
         copyTelTimeoutText = setTimeout(() => {
           if (copyTelTimeoutText) {
@@ -40,7 +40,8 @@ telephoneElWrapper.addEventListener("click", () => {
     })
     .catch((err) => {
       console.error("Failed to copy telephone number: ", err);
-      telephoneEl.style.maskImage = "url('/ep-sonido-iluminacion/clipboard-exclamation-icon.svg')";
+      telephoneEl.style.maskImage =
+        "url('/ep-sonido-iluminacion/clipboard-exclamation-icon.svg')";
       telephoneElTooltip.textContent = "Error al copiar el texto.";
     });
 });
@@ -50,7 +51,8 @@ emailElWrapper.addEventListener("click", () => {
   navigator.clipboard
     .writeText("epsonido.macias@gmail.com")
     .then(() => {
-      emailEl.style.maskImage = "url('/ep-sonido-iluminacion/clipboard-success-icon.svg')";
+      emailEl.style.maskImage =
+        "url('/ep-sonido-iluminacion/clipboard-success-icon.svg')";
       emailElTooltip.textContent = "Texto copiado correctamente!";
 
       copyMailTimeout = setTimeout(() => {
@@ -59,7 +61,8 @@ emailElWrapper.addEventListener("click", () => {
         }
 
         emailElWrapper.blur();
-        emailEl.style.maskImage = "url('/ep-sonido-iluminacion/copy-suggest-icon.svg')";
+        emailEl.style.maskImage =
+          "url('/ep-sonido-iluminacion/copy-suggest-icon.svg')";
 
         copyMailTimeoutText = setTimeout(() => {
           if (copyMailTimeoutText) {
@@ -71,7 +74,8 @@ emailElWrapper.addEventListener("click", () => {
     })
     .catch((err) => {
       console.error("Failed to copy telephone number: ", err);
-      emailEl.style.maskImage = "url('/ep-sonido-iluminacion/clipboard-exclamation-icon.svg')";
+      emailEl.style.maskImage =
+        "url('/ep-sonido-iluminacion/clipboard-exclamation-icon.svg')";
       emailElTooltip.textContent = "Error al copiar el texto.";
     });
 });
@@ -235,7 +239,7 @@ if (fullPath.match("/galerias")) {
 // Change document title based on slug
 const originalTitle = document.title;
 
-if (fullPath !== "/" || fullPath !== "/ep-sonido-iluminacion/") {
+if (fullPath !== "/ep-sonido-iluminacion/") {
   const lowerCaseSlug = fullPath.substring(fullPath.lastIndexOf("/") + 1);
   const capitalizedSlug = lowerCaseSlug.replace(/\b\w/g, (char) =>
     char.toUpperCase(),
@@ -273,17 +277,3 @@ themeSelectionInputs.forEach((el) => {
     setTheme();
   });
 });
-
-// Set favicon and logo for header and footer
-const faviconLink = document.createElement("link");
-faviconLink.rel = "icon";
-faviconLink.type = "image/png";
-faviconLink.href = mainLogo;
-
-document.head.appendChild(faviconLink);
-
-const logoTopEl = document.getElementById("main-logo-top");
-const logoBottomEl = document.getElementById("main-logo-bottom");
-
-logoTopEl.src = mainLogo;
-logoBottomEl.src = mainLogo;

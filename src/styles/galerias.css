@@ -1,6 +1,6 @@
 #services-under-hero-para {
-  font-size: var(--fz-ms);
-  color: var(--primary-800);
+  font-size: var(--fz-ml);
+  color: var(--primary-900);
   animation: h2-para-in both var(--trs-l) 575ms;
 }
 

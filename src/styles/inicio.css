@@ -11,6 +11,15 @@
   min-height: 65dvh;
   border-radius: var(--radius-xl);
   position: relative;
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      hsla(224, 33%, 40%, 0.69) 0%,
+      hsla(224, 33%, 30%, 0.75) 35%,
+      hsla(224, 33%, 10%, 0.8) 70%,
+      hsl(222, 33%, 10%) 100%
+    ),
+    url("../assets/images/texture_1.webp");
 
   &::after {
     content: "";
@@ -133,6 +142,7 @@
   height: 100%;
   width: 100%;
   background-color: hsl(0, 0%, 0%, 0.9);
+  mask: url("../assets/images/texture_2.webp") center / 64px 64px repeat;
   mask-mode: alpha;
   opacity: 0.33;
   z-index: 2;
@@ -457,6 +467,11 @@
     padding: var(--spacing-ml) var(--spacing-m);
   }
 
+  .services-cta-button.top {
+    padding: var(--spacing-s) var(--spacing-ml);
+    font-size: var(--fz-s);
+  }
+
   .services-cta-button {
     padding: var(--spacing-s) var(--spacing-ms);
     font-size: var(--fz-s);
@@ -501,6 +516,11 @@
 
   .hero-description {
     margin-block-end: var(--spacing-ml);
+  }
+
+  .services-cta-button.top {
+    padding: var(--spacing-s) var(--spacing-m);
+    font-size: var(--fz-s);
   }
 
   .services-cta-button {

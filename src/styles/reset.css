@@ -181,6 +181,7 @@ select,
 summary,
 textarea,
 [tabindex] {
+  -webkit-tap-highlight-color: transparent;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
