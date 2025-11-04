@@ -274,7 +274,6 @@
     --bkg-clr-shared-menu-border: hsl(225, 31%, 5%);
     --secondary-100-shared: hsl(226, 33%, 10%);
     --secondary-101-shared: hsl(226, 36%, 9%);
-    --secondary-150-shared: hsl(225, 33%, 15%);
     --secondary-100-shared-menu: hsl(226, 33%, 10%);
     --secondary-150-shared-menu: hsl(225, 33%, 15%);
     --secondary-800-shared-separator: hsl(224, 33%, 80%);
@@ -287,14 +286,13 @@
     --primary-601-shared: hsl(51, 88%, 59%);
     --primary-650-shared: hsl(51, 89%, 60%);
     --primary-700-shared: hsl(51, 90%, 70%);
-    --secondary-200-shared: hsl(224, 33%, 20%);
     --accent-300-shared: hsl(288, 32%, 30%);
     --accent-301-shared: hsl(288, 32%, 30%);
     --accent-302-shared: hsl(288, 31%, 29%);
     --accent-400-shared: hsl(288, 32%, 35%);
     --accent-500-shared: hsl(288, 37%, 48%);
     --secondary-300-shared: hsl(225, 33%, 30%);
-    --secondary-200-shared: hsl(224, 33%, 20%);
+    --secondary-200-shared: hsl(224, 33%, 17%);
     --secondary-150-shared: hsl(225, 33%, 15%);
     --secondary-151-shared: hsl(225, 33%, 15%);
     --accent-600-shared: hsl(288, 32%, 60%);
@@ -307,6 +305,8 @@
     --form-button-edge-2: hsl(288deg 39% 20%);
     --form-button-edge-3: hsl(288deg 39% 18%);
     --form-button-edge-4: hsl(288deg 37% 13%);
+    --accent-100-cta-btn: hsl(286, 33%, 10%);
+    --accent-200-cta-btn: hsl(289, 31%, 20%);
   }
 }
 
@@ -320,7 +320,6 @@
     --accent-50-shared: hsl(280 33% 89%);
     --secondary-100-shared: hsl(224, 33%, 81%);
     --secondary-101-shared: hsl(224, 33%, 85%);
-    --secondary-150-shared: hsl(224, 33%, 73%);
     --secondary-100-shared-menu: hsl(224, 33%, 83%);
     --secondary-150-shared-menu: hsl(224, 33%, 88%);
     --secondary-800-shared-separator: hsl(224, 33%, 53%);
@@ -333,14 +332,13 @@
     --primary-601-shared: hsl(288, 45%, 45%);
     --primary-650-shared: hsl(51, 89%, 60%);
     --primary-700-shared: hsl(288, 34%, 35%);
-    --secondary-200-shared: hsl(224, 33%, 33%);
     --accent-300-shared: hsl(288, 32%, 48%);
     --accent-301-shared: hsl(288, 32%, 62%);
     --accent-302-shared: hsl(288, 35%, 46%);
     --accent-400-shared: hsl(288, 32%, 59%);
     --accent-500-shared: hsl(288, 37%, 62%);
     --secondary-300-shared: hsl(225, 33%, 52%);
-    --secondary-200-shared: hsl(224, 33%, 42%);
+    --secondary-200-shared: hsl(224, 33%, 39%);
     --secondary-150-shared: hsl(225, 33%, 43%);
     --secondary-151-shared: hsl(225, 33%, 77%);
     --accent-600-shared: hsl(51, 89%, 46%);
@@ -352,6 +350,8 @@
     --form-button-edge-2: hsl(288deg 39% 28%);
     --form-button-edge-3: hsl(288deg 39% 25%);
     --form-button-edge-4: hsl(288deg 37% 14%);
+    --accent-100-cta-btn: hsl(286, 33%, 21%);
+    --accent-200-cta-btn: hsl(289, 31%, 31%);
 
     --text-clr: var(--text-900);
     --text-clr-dimer: color-mix(in hsl, var(--text-clr) 34%, transparent 66%);
@@ -507,7 +507,6 @@ body.dark-theme {
   --bkg-clr-shared-menu-border: hsl(225, 31%, 5%);
   --secondary-100-shared: hsl(226, 33%, 10%);
   --secondary-101-shared: hsl(226, 36%, 9%);
-  --secondary-150-shared: hsl(225, 33%, 15%);
   --secondary-100-shared-menu: hsl(226, 33%, 10%);
   --secondary-150-shared-menu: hsl(225, 33%, 15%);
   --secondary-800-shared-separator: hsl(224, 33%, 80%);
@@ -520,14 +519,13 @@ body.dark-theme {
   --primary-601-shared: hsl(51, 88%, 59%);
   --primary-650-shared: hsl(51, 89%, 60%);
   --primary-700-shared: hsl(51, 90%, 70%);
-  --secondary-200-shared: hsl(224, 33%, 20%);
   --accent-300-shared: hsl(288, 32%, 30%);
   --accent-301-shared: hsl(288, 32%, 30%);
   --accent-302-shared: hsl(288, 31%, 29%);
   --accent-400-shared: hsl(288, 32%, 35%);
   --accent-500-shared: hsl(288, 37%, 48%);
   --secondary-300-shared: hsl(225, 33%, 30%);
-  --secondary-200-shared: hsl(224, 33%, 20%);
+  --secondary-200-shared: hsl(224, 33%, 17%);
   --secondary-150-shared: hsl(225, 33%, 15%);
   --secondary-151-shared: hsl(225, 33%, 15%);
   --accent-600-shared: hsl(288, 32%, 60%);
@@ -540,6 +538,8 @@ body.dark-theme {
   --form-button-edge-2: hsl(288deg 39% 20%);
   --form-button-edge-3: hsl(288deg 39% 18%);
   --form-button-edge-4: hsl(288deg 37% 13%);
+  --accent-100-cta-btn: hsl(286, 33%, 10%);
+  --accent-200-cta-btn: hsl(289, 31%, 20%);
 }
 
 body.light-theme {
@@ -549,7 +549,6 @@ body.light-theme {
   --bkg-clr-shared-menu-border: hsl(224, 33%, 77%);
   --secondary-100-shared: hsl(224, 33%, 81%);
   --secondary-101-shared: hsl(224, 33%, 85%);
-  --secondary-150-shared: hsl(224, 33%, 73%);
   --secondary-100-shared-menu: hsl(224, 33%, 83%);
   --secondary-150-shared-menu: hsl(224, 33%, 88%);
   --secondary-800-shared-separator: hsl(224, 33%, 53%);
@@ -562,14 +561,13 @@ body.light-theme {
   --primary-601-shared: hsl(288, 45%, 45%);
   --primary-650-shared: hsl(51, 89%, 60%);
   --primary-700-shared: hsl(288, 34%, 35%);
-  --secondary-200-shared: hsl(224, 33%, 33%);
   --accent-300-shared: hsl(288, 32%, 48%);
   --accent-301-shared: hsl(288, 32%, 62%);
   --accent-302-shared: hsl(288, 35%, 46%);
   --accent-400-shared: hsl(288, 32%, 59%);
   --accent-500-shared: hsl(288, 37%, 62%);
   --secondary-300-shared: hsl(225, 33%, 52%);
-  --secondary-200-shared: hsl(224, 33%, 42%);
+  --secondary-200-shared: hsl(224, 33%, 39%);
   --secondary-150-shared: hsl(225, 33%, 43%);
   --secondary-151-shared: hsl(225, 33%, 77%);
   --accent-600-shared: hsl(51, 89%, 46%);
@@ -582,6 +580,8 @@ body.light-theme {
   --form-button-edge-2: hsl(288deg 39% 28%);
   --form-button-edge-3: hsl(288deg 39% 25%);
   --form-button-edge-4: hsl(288deg 37% 14%);
+  --accent-100-cta-btn: hsl(286, 33%, 21%);
+  --accent-200-cta-btn: hsl(289, 31%, 31%);
 
   --text-clr: var(--text-900);
   --text-clr-dimer: color-mix(in hsl, var(--text-clr) 34%, transparent 66%);
@@ -807,7 +807,7 @@ label {
 .about-cta {
   max-width: 55ch;
   margin: 0 auto var(--spacing-xl);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-m);
   text-align: center;
   opacity: 0.3;
   transition: opacity var(--trs-m);
@@ -868,9 +868,9 @@ label {
     translate var(--trs-s);
   background-image: linear-gradient(
     139deg,
-    var(--accent-100),
-    var(--accent-200),
-    var(--accent-100)
+    var(--accent-100-cta-btn),
+    var(--accent-200-cta-btn),
+    var(--accent-100-cta-btn)
   );
   background-size: 263%;
   background-position: 0%;
@@ -918,14 +918,6 @@ label {
     width: 44px;
   }
 
-  .about-cta-title {
-    font-size: var(--fz-l);
-  }
-
-  .about-cta-description {
-    font-size: var(--fz-m);
-  }
-
   .about-cta-button {
     padding: var(--spacing-s) var(--spacing-m);
     font-size: var(--fz-ms);
@@ -965,11 +957,11 @@ label {
   }
 
   .about-cta-title {
-    font-size: var(--fz-ml);
+    font-size: var(--fz-l);
   }
 
   .about-cta-description {
-    font-size: var(--fz-s);
+    font-size: var(--fz-m);
   }
 }
 

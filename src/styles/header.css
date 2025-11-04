@@ -470,7 +470,7 @@
     position: fixed;
     inset: 0 0 0 auto;
     z-index: 102;
-    padding: 80px 25px 20px;
+    padding: 100px 25px 20px;
     font-size: var(--fz-m);
     border-left: var(--border-width-m) solid var(--secondary-200-shared);
     background-image: linear-gradient(
@@ -483,16 +483,22 @@
     translate: 100% 0;
     transition: translate var(--trs-in);
 
-    & menu li a {
-      display: block;
-      margin-block: 0.5ex;
-      padding: 0.5em 1em;
-      background-color: var(--secondary-50);
-      border: var(--border-width-m) solid var(--primary-200-shared);
-      border-radius: var(--radius-m);
+    & menu li {
+      &:not(:first-of-type, :last-of-type) {
+        margin-block: 1.5em;
+      }
 
-      &:active {
-        border: var(--border-width-m) solid var(--primary-600-shared);
+      & a {
+        display: block;
+        margin-block: 0.5ex;
+        padding: 0.5em 1em;
+        background-color: var(--secondary-50);
+        border: var(--border-width-m) solid var(--primary-200-shared);
+        border-radius: var(--radius-m);
+
+        &:active {
+          border: var(--border-width-m) solid var(--primary-600-shared);
+        }
       }
     }
   }
