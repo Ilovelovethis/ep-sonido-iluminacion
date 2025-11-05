@@ -28,6 +28,10 @@
   & ul li {
     display: flex;
     margin-block: var(--spacing-m);
+
+    &:last-of-type {
+      margin-block: var(--spacing-m) 0;
+    }
   }
 
   & ul li a {

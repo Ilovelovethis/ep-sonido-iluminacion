@@ -42,6 +42,7 @@
 }
 
 .main-nav {
+  align-self: center;
   min-height: 3em;
   font-size: var(--fz-m);
   letter-spacing: 0.01875em;
@@ -485,7 +486,7 @@
 
     & menu li {
       &:not(:first-of-type, :last-of-type) {
-        margin-block: 1.5em;
+        margin-block: var(--spacing-ml);
       }
 
       & a {
@@ -531,6 +532,10 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 15ch), 1fr));
       gap: 1ex;
+
+      & li:not(:first-of-type, :last-of-type) {
+        margin-block: 0;
+      }
     }
   }
 }
