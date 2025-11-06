@@ -50,7 +50,7 @@
       var(--c3) 0
     );
   background-size: var(--s) calc(var(--s) / tan(30deg));
-  border: var(--border-width-m) dashed var(--primary-500);
+  border: 3px double var(--primary-500);
   border-radius: var(--radius-m);
   box-shadow: var(--inner-shadow-1);
   transition: translate var(--trs-back-in-out-short);
