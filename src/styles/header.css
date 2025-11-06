@@ -36,20 +36,20 @@
 .main-header-inner-wrapper {
   display: grid;
   grid-template-columns: 450px 1fr 450px;
-  justify-items: center;
-  align-items: start;
+  align-items: center;
   padding: 0.5em 1.25em 0.375em;
 }
 
 .main-nav {
-  align-self: center;
   min-height: 3em;
   font-size: var(--fz-m);
   letter-spacing: 0.01875em;
 }
 .main-nav.nav-left {
+  justify-self: start;
 }
 .main-nav.nav-right {
+  justify-self: end;
 }
 
 .main-nav-inner-wrapper {
@@ -175,12 +175,21 @@
   flex-direction: column;
   align-items: center;
   margin-inline: 0.5em;
+  transition: margin var(--trs-out);
 
   & a {
     display: block;
     width: max-content;
     margin: 0 auto 0.625em;
   }
+}
+
+#main-header.scrolled .main-header-center-wrapper {
+  margin-block-end: var(--spacing-ms);
+}
+
+#main-header.scrolled-at-bottom .main-header-center-wrapper {
+  margin-block-end: 0;
 }
 
 .main-logo.top {
@@ -257,7 +266,7 @@
 
 .main-title-motto-separator {
   height: 1px;
-  width: 86%;
+  width: 67%;
   scale: 0 1;
   margin-block: 0;
   background-color: var(--primary-500-shared);

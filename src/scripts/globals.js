@@ -81,7 +81,6 @@ emailElWrapper.addEventListener("click", () => {
 });
 
 // Scroll animations
-
 /* Classes to add:
   "scrolled" for header
   "scrolled-at-bottom" for header
