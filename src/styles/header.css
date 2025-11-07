@@ -467,6 +467,11 @@
     transition: opacity var(--trs-l) 350ms;
   }
 
+  .main-burger-menu-foredrop.closing {
+    opacity: 0 !important;
+    transition: opacity var(--trs-m) !important;
+  }
+
   .burger-menu-button[aria-expanded="true"] ~ .main-burger-menu-foredrop {
     display: block;
     opacity: 1;

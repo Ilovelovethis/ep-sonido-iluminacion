@@ -43,10 +43,10 @@
     text-decoration: underline;
     text-decoration-color: var(--accent-301-shared);
     transition: text-decoration-color var(--trs-s);
-  }
 
-  & ul li a:hover {
-    text-decoration-color: var(--accent-500);
+    &:hover {
+      text-decoration-color: var(--accent-500);
+    }
   }
 }
 

@@ -202,13 +202,33 @@ matchesDesktopSizeHeaderScroll.addEventListener("change", (e) => {
 // Burger menu
 const burgerBtn = document.getElementById("burger-menu-button");
 const burgerMenu = document.getElementById("mobile-nav-menu");
+const mobileForedrop = document.querySelector(".main-burger-menu-foredrop");
+let burgerDelay = 0;
+
+function toggleBurgerMenu() {
+  if (burgerBtn.getAttribute("aria-expanded") === "true") {
+    burgerDelay = 1100;
+    mobileForedrop.classList.add("closing");
+  }
+
+  burgerMenu.classList.toggle("burger-clicked");
+
+  setTimeout(() => {
+    burgerBtn.setAttribute(
+      "aria-expanded",
+      String(!(burgerBtn.getAttribute("aria-expanded") === "true")),
+    );
+    mobileForedrop.classList.remove("closing");
+    burgerDelay = 0;
+  }, burgerDelay);
+}
 
 burgerBtn.addEventListener("click", () => {
-  burgerBtn.setAttribute(
-    "aria-expanded",
-    String(!(burgerBtn.getAttribute("aria-expanded") === "true")),
-  );
-  burgerMenu.classList.toggle("burger-clicked");
+  toggleBurgerMenu();
+});
+
+mobileForedrop.addEventListener("click", () => {
+  toggleBurgerMenu();
 });
 
 // Path check on nav links

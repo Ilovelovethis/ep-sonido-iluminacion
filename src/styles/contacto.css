@@ -83,14 +83,7 @@
 
 .contact-important-fieldset {
   & label[for="name"]::after,
-  & label[for="message"]::after {
-    content: "*";
-    vertical-align: middle;
-    padding-inline-start: 1ex;
-    font-size: var(--fz-l);
-    color: var(--primary-601-shared);
-  }
-
+  & label[for="message"]::after,
   & label[for="phone"]::after,
   & label[for="email"]::after {
     content: "*";
@@ -416,7 +409,7 @@
   max-height: 90dvh;
   padding: var(--spacing-ml);
   border: var(--border-width-m) solid var(--secondary-300);
-  border-radius: var(--radius-m) 0 0 var(--radius-m);
+  border-radius: var(--radius-l) 0 0 var(--radius-l);
   background-color: var(--secondary-100);
   box-shadow: 0px 3px 50px -10px hsl(var(--shadow-color));
   z-index: 100;
@@ -479,8 +472,16 @@
   text-align: center;
   opacity: 0.83;
 
-  & span {
+  & a {
     font-family: var(--ff-extra-bold);
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-301-shared);
+    transition: text-decoration-color var(--trs-s);
+
+    &:hover {
+      text-decoration-color: var(--accent-500);
+    }
   }
 }
 
@@ -557,6 +558,27 @@
   .dev-contact {
     width: fit-content;
     margin: 0 1cap var(--spacing-xxl) auto;
+  }
+
+  #close-dev-modal-button {
+    inset: var(--spacing-s) calc(var(--spacing-s) + 4px) auto auto;
+  }
+
+  .dev-notice-para {
+    margin-block: var(--spacing-l) var(--spacing-ms);
+    font-size: var(--fz-m);
+  }
+
+  .contact-important-fieldset {
+    & label[for="name"]::after,
+    & label[for="message"]::after,
+    & label[for="phone"]::after,
+    & label[for="email"]::after,
+    & label[for="dev-name"]::after,
+    & label[for="dev-email"]::after,
+    & label[for="dev-message"]::after {
+      font-size: var(--fz-ml);
+    }
   }
 }
 

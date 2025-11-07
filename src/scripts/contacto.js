@@ -175,12 +175,14 @@ const devFormModalButton = document.getElementById("dev-form-modal-button");
 openDevModal.addEventListener("click", (e) => {
   e.preventDefault();
   devContactModal.showModal();
+  document.body.classList.add("no-scroll");
 });
 
 closeDevModalButton.addEventListener("click", (e) => {
   e.preventDefault();
   setTimeout(() => {
     devContactModal.close();
+    document.body.classList.remove("no-scroll");
     devContactModal.style.removeProperty("--modal-opacity");
   }, 1100);
   devContactModal.style.setProperty("--modal-opacity", "0");
@@ -190,6 +192,7 @@ devContactModal.addEventListener("cancel", (e) => {
   e.preventDefault();
   setTimeout(() => {
     devContactModal.close();
+    document.body.classList.remove("no-scroll");
     devContactModal.style.removeProperty("--modal-opacity");
   }, 1100);
   devContactModal.style.setProperty("--modal-opacity", "0");
@@ -235,6 +238,7 @@ devForm.addEventListener("submit", async (e) => {
       setTimeout(() => {
         setTimeout(() => {
           devContactModal.close();
+          document.body.classList.remove("no-scroll");
           devContactModal.style.removeProperty("--modal-opacity");
         }, 1100);
         devContactModal.style.setProperty("--modal-opacity", "0");
