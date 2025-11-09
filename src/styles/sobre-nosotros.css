@@ -59,6 +59,7 @@
   }
 
   & span:last-of-type {
+    display: inline-block;
     font-family: var(--ff-bold);
     font-weight: bold;
   }
