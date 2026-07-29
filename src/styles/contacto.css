@@ -54,7 +54,10 @@
 
   & textarea {
     max-height: 10lh;
-    transition: height 140ms linear;
+    transition:
+      height 140ms linear,
+      border-color var(--trs-m) 330ms,
+      caret-color var(--trs-m) 330ms;
   }
 
   & select {
