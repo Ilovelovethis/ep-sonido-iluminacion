@@ -42,8 +42,8 @@
     padding: 0.5em 0.75em;
     caret-color: var(--secondary-500);
     transition:
-      border-color var(--trs-m) 330ms,
-      caret-color var(--trs-m) 330ms;
+      border-color var(--trs-m) 270ms,
+      caret-color var(--trs-m) 350ms;
   }
 
   & :is(input, textarea, select):focus {
@@ -56,8 +56,8 @@
     max-height: 10lh;
     transition:
       height 140ms linear,
-      border-color var(--trs-m) 330ms,
-      caret-color var(--trs-m) 330ms;
+      border-color var(--trs-m) 270ms,
+      caret-color var(--trs-m) 350ms;
   }
 
   & select {
@@ -82,8 +82,8 @@
   text-underline-offset: 0.35lh;
   text-decoration-color: transparent;
   transition:
-    color var(--trs-m) 330ms,
-    text-decoration-color var(--trs-m) 330ms;
+    color var(--trs-m) 270ms,
+    text-decoration-color var(--trs-m) 270ms;
 }
 
 .and-or-para.yellow {
@@ -211,7 +211,7 @@
   padding: 0;
   cursor: pointer;
   outline-offset: 4px;
-  transition: filter 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  transition: filter 500ms cubic-bezier(0.3, 0.7, 0.4, 1);
   user-select: none;
   touch-action: manipulation;
 }

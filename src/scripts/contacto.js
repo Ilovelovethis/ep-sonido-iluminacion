@@ -4,13 +4,13 @@ import "../styles/contacto.css";
 
 const TIMEOUTS = {
   loaderHiding: 171,
-  formUnexpand: 1200,
-  modalClosing: 1000,
+  formUnexpand: 900,
+  modalClosing: 500,
   modalAutoClose: 10000,
   formReset: 2500,
   submitDebounce: 2800,
-  modalAnimation: 1100,
-  backdropClosing: 1425,
+  modalAnimation: 750,
+  backdropClosing: 750,
 };
 
 // Helper Functions --.

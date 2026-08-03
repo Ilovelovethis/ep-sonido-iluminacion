@@ -208,7 +208,7 @@ let burgerMenuIsOpen = false;
 
 function toggleBurgerMenu() {
   if (burgerBtn.getAttribute("aria-expanded") === "true") {
-    burgerDelay = 1100;
+    burgerDelay = 550;
     mobileForedrop.classList.add("closing");
   }
 

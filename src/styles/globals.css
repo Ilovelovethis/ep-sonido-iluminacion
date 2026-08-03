@@ -68,14 +68,14 @@
   --inner-shadow-1: inset 0 -3px 5px 0 hsla(0, 0%, 18%, 0.39);
 
   --trs-s: 230ms ease-in-out;
-  --trs-m: 500ms ease-in-out;
-  --trs-l: 1075ms ease-in-out;
-  --trs-in: 350ms cubic-bezier(0.11, 0, 0.5, 0);
-  --trs-in-long: 1075ms cubic-bezier(0.11, 0, 0.5, 0);
-  --trs-out: 500ms cubic-bezier(0.5, 1, 0.89, 1);
-  --trs-out-long: 900ms cubic-bezier(0.5, 1, 0.89, 1);
-  --trs-out-longer: 1450ms cubic-bezier(0.5, 1, 0.89, 1);
-  --trs-out-longest: 2700ms cubic-bezier(0.5, 1, 0.89, 1);
+  --trs-m: 330ms ease-in-out;
+  --trs-l: 568ms ease-in-out;
+  --trs-in: 230ms cubic-bezier(0.11, 0, 0.5, 0);
+  --trs-in-long: 568ms cubic-bezier(0.11, 0, 0.5, 0);
+  --trs-out: 330ms cubic-bezier(0.5, 1, 0.89, 1);
+  --trs-out-long: 600ms cubic-bezier(0.5, 1, 0.89, 1);
+  --trs-out-longer: 966ms cubic-bezier(0.5, 1, 0.89, 1);
+  --trs-out-longest: 1250ms cubic-bezier(0.5, 1, 0.89, 1);
   --trs-back-in: 500ms
     linear(
       0,
@@ -93,7 +93,7 @@
       0.607 92.1%,
       1
     );
-  --trs-back-in-short: 375ms
+  --trs-back-in-short: 250ms
     linear(
       0,
       -0.004 6.9%,
@@ -131,7 +131,7 @@
       1.004 95.3%,
       1
     );
-  --trs-bounce: 800ms
+  --trs-bounce: 600ms
     linear(
       0,
       0.269 10.8%,
@@ -599,7 +599,7 @@ label {
   & p {
     font-size: var(--fz-ml);
     max-width: 55ch;
-    animation: h2-para-in both var(--trs-l) 350ms;
+    animation: h2-para-in both var(--trs-l) 233ms;
 
     &:first-of-type {
       margin-block-start: 1.1875em;
@@ -626,7 +626,7 @@ label {
   font-weight: 600;
   letter-spacing: 0.015em;
   transition: color var(--trs-s);
-  animation: h2-in both var(--trs-l) 350ms;
+  animation: h2-in both var(--trs-l) 233ms;
 }
 
 .title-underline {
@@ -770,7 +770,7 @@ label {
 
 #services-under-hero-para {
   font-size: var(--fz-ml);
-  animation: h2-para-in both var(--trs-l) 575ms;
+  animation: h2-para-in both var(--trs-l) 383ms;
 }
 
 .semi-bold {

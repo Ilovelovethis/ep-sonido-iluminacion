@@ -79,7 +79,7 @@ async function initCarousel() {
       type: "fade",
       drag: false,
       rewind: true,
-      speed: 700,
+      speed: 550,
       height: "100%",
       width: "100%",
       fixedHeight: "min(70dvh, 900px)",

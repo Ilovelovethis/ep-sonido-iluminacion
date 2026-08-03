@@ -118,7 +118,7 @@
     background-image: linear-gradient(var(--secondary-100), transparent 35%);
     background-size: 100% 220%;
     background-position: 50% 50%;
-    transition: background-position var(--trs-l) 630ms;
+    transition: background-position var(--trs-l) 315ms;
     z-index: 2;
   }
 
@@ -193,7 +193,7 @@
   font-weight: 600;
   font-variation-settings: "wght" 600;
   opacity: 0.86;
-  transition: opacity var(--trs-l) 720ms;
+  transition: opacity var(--trs-l) 360ms;
   z-index: 3;
 }
 

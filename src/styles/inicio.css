@@ -136,7 +136,7 @@
   justify-items: center;
   gap: var(--spacing-xl);
   perspective: 305px;
-  animation: hero-fade-in-btns var(--trs-out-longer) 750ms both;
+  animation: hero-fade-in-btns var(--trs-out-longer) 500ms both;
 }
 
 .services-cta-button {
@@ -290,7 +290,7 @@
 
 .about-us-column:hover::before {
   opacity: 1;
-  transition: opacity 369ms;
+  transition: opacity 246ms;
 }
 
 .about-us-section,
@@ -308,7 +308,7 @@
 }
 
 .about-us-column:hover .columns-content-wrapper {
-  transition: scale 963ms;
+  transition: scale 642ms;
   scale: 1.03;
 }
 

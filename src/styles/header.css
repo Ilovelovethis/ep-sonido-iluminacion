@@ -434,9 +434,9 @@
 
   .burger-menu-button[aria-expanded="true"] .burger-rect {
     transition:
-      y var(--trs-back-in) 350ms,
-      rotate var(--trs-back-in) 800ms,
-      opacity var(--trs-back-in) 1100ms;
+      y var(--trs-back-in) 233ms,
+      rotate var(--trs-back-in) 600ms,
+      opacity var(--trs-back-in) 733ms;
   }
 
   .burger-menu-button[aria-expanded="true"] .burger-rect:is(.top, .bottom) {
@@ -496,7 +496,7 @@
     );
     overflow: auto;
     translate: 100% 0;
-    transition: translate var(--trs-in);
+    transition: translate var(--trs-out-long);
 
     & menu li {
       &:not(:first-of-type, :last-of-type) {

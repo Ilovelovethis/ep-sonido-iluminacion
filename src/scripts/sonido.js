@@ -13,10 +13,13 @@ async function initCarousel() {
       query: "?url",
       import: "default",
     });
-    const videoModules = import.meta.glob("../assets/videos/sound_*.{webm,mp4}", {
-      query: "?url",
-      import: "default",
-    });
+    const videoModules = import.meta.glob(
+      "../assets/videos/sound_*.{webm,mp4}",
+      {
+        query: "?url",
+        import: "default",
+      },
+    );
 
     const imageEntries = Object.entries(imageModules);
     const videoEntries = Object.entries(videoModules);
@@ -76,7 +79,7 @@ async function initCarousel() {
       type: "fade",
       drag: false,
       rewind: true,
-      speed: 700,
+      speed: 550,
       height: "100%",
       width: "100%",
       fixedHeight: "min(70dvh, 900px)",
