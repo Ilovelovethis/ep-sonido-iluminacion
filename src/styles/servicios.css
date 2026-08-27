@@ -227,12 +227,15 @@
     min-height: 1.5lh;
 
     &::before {
-      content: "✔";
+      content: "";
       position: absolute;
       inset: 0 auto auto 0;
-      color: var(--card-accent-end);
+      width: 1em;
+      height: 1em;
       font-size: var(--fz-mll);
-      translate: 0 -0.25lh;
+      mask: url("/check.svg") center / contain no-repeat;
+      background-color: var(--card-accent-end);
+      translate: 0 -0.08lh;
     }
   }
 }
